@@ -1,0 +1,303 @@
+#animation{
+    width: 100%;
+    background: linear-gradient(150deg, #1c1c1c, #1C2833, #511509);
+    background-size: 400% 300%;
+    animation: BgGradient 5s ease infinite;
+    padding-bottom: 10px;
+}
+
+@keyframes BgGradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 50% 100%;}
+    100% {background-position: 0% 50%;}
+}
+
+#upperbottons{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px; 
+    padding-bottom: 100px;
+}
+
+#upperbottons div a{
+    margin: 10px;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: .375rem .75rem;
+    border: 1px solid red;
+    border-radius: .25rem;
+    color: #ABB2B9;
+    transition: color .15s ease-in-out,
+}
+#upperbottons div a:hover{
+    color: black;
+    background-color: #fff;
+}
+
+body{
+    width: 100%;
+    height: 0;
+    margin: 0;
+    font-family: 'Rajdhani', sans-serif;
+    background: #1c1c1c;
+    letter-spacing: 1.5px;
+}
+
+h1{
+    color: #ABB2B9;
+    margin-left: 150px;
+    margin-bottom: 30px;
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+.redletter{
+    color: red;
+}
+
+#outstanding{
+    display: flex;
+    width: 45%;
+    margin-top: 50px;
+    margin-left: 200px;
+    color: #ABB2B9;
+    font-size: 1.2rem;
+    list-style: none;
+}
+
+#downloadcv{
+    float: right;
+    margin-right: 300px;
+
+}
+#downloadcv a{
+    margin: 10px;
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 0.5rem;
+    border: 2px solid red;
+    border-radius: .25rem;
+    color: #ABB2B9;
+    transition: color .15s ease-in-out,
+}
+#downloadcv a:hover{
+    color: black;
+    background-color: #fff;
+}
+
+h2{
+    margin-top: 73px;
+    margin-left: 50%;
+    color: #ABB2B9;
+    margin-left: 150px;
+    margin-bottom: 30px;
+    font-size: 2.1rem;
+    letter-spacing: 1px;
+}
+
+#experience{
+    margin-left: 200px;
+    color: #ABB2B9;
+    font-size: 1.2rem;
+    list-style: square;
+}
+
+#contactme{
+    margin: 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#contactform{
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: .25rem;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    font-family: 'Rajdhani', sans-serif;
+}
+textarea{
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 300px;
+}
+#sendbutton{
+    color: #ABB2B9;
+    background-color: transparent;
+    border: 1.5px solid red;
+}
+#sendbutton:hover{
+    color: black;
+    background-color: #fff;
+    cursor: pointer;
+}
+#contactformbox{
+    padding-bottom: 15px;
+}
+
+#carouselCaptions{
+    padding: 15px;
+}
+.carousel-inner img{
+    height: 80vh;
+    border: groove red;
+}
+
+/*-------RESPONSIVE--------*/
+/*-------RESPONSIVE--------*/
+/*-------RESPONSIVE--------*/
+@media all and (min-width: 600px) and (max-width:1023px){
+
+    #upperbottons{
+        text-align: center;
+        float: right;
+        flex-direction: column-reverse;
+    }
+
+    #upperbottons div a{
+        font-size: 1rem;
+    }
+    
+    h1{
+        padding-top: 40px;
+        font-size: 2.6rem;
+    }
+
+    /*-------ABOUT--------*/
+    #outstanding{
+        width: 70%;
+        margin-top: 50px;
+        margin-left: 15%;
+        font-size: 1.2rem;
+        padding-bottom: 50px;
+    }
+    
+    #downloadcv{
+        display: flex;
+        justify-content: center;
+    }
+
+    h2{
+        padding-top: 50px;
+        margin-top: 100px;
+        color: #ABB2B9;
+        margin-left: 150px;
+        margin-bottom: 30px;
+        font-size: 1.9rem;
+        letter-spacing: 1px;
+    }
+    
+    #experience{
+        margin-left: 200px;
+        font-size: 1.2rem;
+    }
+
+    /*-------CONTACT--------*/
+    #contactme{
+        margin-left: 150px;
+        margin-bottom: 50px;
+        text-align: center;
+    
+    }
+    
+    #contactformbox{
+        padding-bottom: 205px;
+    }
+    
+    #someworks{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    #carouselCaptions{
+        padding: 10px;
+    }
+    .carousel-inner img{
+        height: 70vh;
+        border: groove red;
+    }
+}
+
+@media all and (max-width: 599px){
+    #upperbottons{
+        text-align: center;
+        float: right;
+        flex-direction: column-reverse;
+    }
+
+    #upperbottons div a{
+        font-size: 0.8rem;
+    }
+
+    h1{
+        margin-left: 30px;
+        padding-top: 40px;
+        font-size: 1.5rem;
+    }
+
+    /*-------ABOUT--------*/
+    #outstanding{
+        width: 60%;
+        margin-left: 30px;
+        font-size: 0.9rem;
+    }
+    
+    #downloadcv{
+        margin-right: 140px;
+        padding: 0;
+        
+    }
+    #downloadcv a{
+        font-size: 1rem;
+    }
+
+    h2{
+        padding-top: 30px;
+        margin-left: 30px;
+        font-size: 1.1rem;
+    }
+    
+    #experience{
+        margin-left: 40px;
+        font-size: 0.9rem;
+    }
+
+    /*-------CONTACT--------*/
+    #contactme{
+        margin-left: 30px;
+        padding-top: 120px;
+        font-size: 1.5rem;
+    }
+    
+    #contactform{
+        padding-top: 10px;
+        width: 400px;
+    }
+    #contactformbox{
+        padding-top: 80px;
+    }
+
+    /*-------CONTACT--------*/
+    #someworks{
+        margin-left: 30px;
+        padding-top: 120px;
+        font-size: 1.5rem;
+    }
+
+    #carouselCaptions{
+        padding: 10px;
+
+    }
+}
